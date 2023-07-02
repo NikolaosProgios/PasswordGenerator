@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="light_black">#222830</color>
+    <color name="dark_blue">#28425C</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#16a475</color>
+    <color name="main_app_color">#FF018786</color>
+    <color name="gray">#b4bcbf</color>
+    <color name="lightGray">#E3E3E3</color>
+    <color name="darkGray">#959595</color>
+    <color name="weak">#FF4646</color>
+    <color name="medium">#ff8f00</color>
+    <color name="strong">#FCCA3F</color>
+    <color name="bulletproof">@color/green</color>
+
+    <color name="colorPrimary">@color/white</color>
+    <color name="statusBarColor">@color/main_app_color</color>
+
+    <color name="main_activity_bg">@color/dark_blue</color>
+    <color name="enter_length_title">@color/black</color>
+    <color name="seekbar_position">@color/black</color>
+    <color name="generate_btn_bg">@color/main_app_color</color>
+    <color name="generate_btn_tv">@color/lightGray</color>
+    <color name="include_char_text">@color/black</color>
+    <color name="check_box_text">#0b8778</color>
+    <color name="exclude_char_text">@color/black</color>
+
+    <color name="password_activity_bg">@color/dark_blue</color>
+    <color name="password_title">@color/black</color>
+    <color name="password_result">@color/black</color>
+    <color name="copy_btn_bg">@color/main_app_color</color>
+    <color name="copy_btn_tv">@color/lightGray</color>
+    <color name="refresh_btn_bg">@color/main_app_color</color>
+    <color name="refresh_btn_icon">@color/lightGray</color>
+    <color name="check_icon">@color/green</color>
+    <color name="checked_tv">@color/green</color>
+</resources>

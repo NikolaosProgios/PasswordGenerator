@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Password Generator</string>
+
+    <string name="all_car">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&amp;*</string>
+    <string name="upper_letters">ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="lower_letters">abcdefghijklmnopqrstuvwxyz</string>
+    <string name="digit_chars">0123456789</string>
+    <string name="symbols_chars">!@#$%^&amp;*</string>
+
+    <string name="select_check_box">Select at least one check box</string>
+
+    <string name="enter_length">Enter Length</string>
+    <string name="generate">Generate</string>
+    <string name="include_text">Include Characters</string>
+    <string name="A_to_Z">A - Z</string>
+    <string name="a_to_z">a - z</string>
+    <string name="zero_to_9">0 – 9</string>
+    <string name="symbols_char">! @ # $ *</string>
+    <string name="exclude_text">Exclude similar Characters</string>
+    <string name="similar_chars">i I l 1 o O 0</string>
+
+    <string name="password">Password</string>
+    <string name="cope_to_clipboard">Copy to clipboard</string>
+    <string name="lower_case_letter">Lowercase Letter</string>
+    <string name="upper_case_letter">Uppercase Letter</string>
+    <string name="digit">Digit</string>
+    <string name="symbol_tv">Symbol</string>
+    <string name="excluded_similar_chars">Exclude Similar Chars</string>
+</resources>

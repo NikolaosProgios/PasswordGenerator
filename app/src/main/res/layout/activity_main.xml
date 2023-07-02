@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_activity_bg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerCrop"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/girl_on_the_bicycle_light" />
+
+    <TextView
+        android:id="@+id/enter_length_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/animation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/margin_huge"
+        android:layout_marginTop="@dimen/margin_small_x"
+        android:fontFamily="@font/lobster_regular"
+        android:text="@string/enter_length"
+        android:textColor="@color/enter_length_title"
+        android:textSize="@dimen/text_huge" />
+
+    <SeekBar
+        android:id="@+id/enter_length_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_length_title"
+        android:layout_marginTop="@dimen/margin_small_x"
+        android:max="@integer/seek_bar_max"
+        android:min="@integer/seek_bar_min"
+        android:padding="@dimen/margin_small_x" />
+
+    <TextView
+        android:id="@+id/seekbar_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_length_seekbar"
+        android:fontFamily="@font/lobster_regular"
+        android:gravity="center"
+        android:textColor="@color/seekbar_position"
+        android:textSize="@dimen/text_small_x" />
+
+    <Button
+        android:id="@+id/generate_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekbar_position"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/margin_small_x"
+        android:layout_marginTop="@dimen/margin_small_x"
+        android:layout_marginEnd="@dimen/margin_small_x"
+        android:layout_marginBottom="@dimen/margin_small_x"
+        android:background="@color/generate_btn_bg"
+        android:fontFamily="@font/lobster_regular"
+        android:text="@string/generate"
+        android:textAllCaps="false"
+        android:textColor="@color/generate_btn_tv"
+        android:textSize="@dimen/text_large" />
+
+    <TextView
+        android:id="@+id/include_char_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/generate_btn"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/margin_small_x"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:fontFamily="@font/lobster_regular"
+        android:text="@string/include_text"
+        android:textColor="@color/include_char_text"
+        android:textSize="@dimen/text_medium" />
+
+    <CheckBox
+        android:id="@+id/upper_letters_cb"
+        android:layout_width="@dimen/width_small"
+        android:layout_height="@dimen/height_small_x"
+        android:layout_below="@id/include_char_text"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_small_x"
+        android:checked="true"
+        android:text="@string/A_to_Z"
+        android:textColor="@color/check_box_text"
+        android:textSize="@dimen/text_small_x" />
+
+    <CheckBox
+        android:id="@+id/lower_letters_cb"
+        android:layout_width="@dimen/width_small"
+        android:layout_height="@dimen/height_small_x"
+        android:layout_alignTop="@id/upper_letters_cb"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_toEndOf="@id/upper_letters_cb"
+        android:checked="true"
+        android:text="@string/a_to_z"
+        android:textColor="@color/check_box_text"
+        android:textSize="@dimen/text_small_x" />
+
+    <CheckBox
+        android:id="@+id/digit_cb"
+        android:layout_width="@dimen/width_small"
+        android:layout_height="@dimen/height_small_x"
+        android:layout_alignTop="@id/lower_letters_cb"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_toEndOf="@id/lower_letters_cb"
+        android:checked="true"
+        android:text="@string/zero_to_9"
+        android:textColor="@color/check_box_text"
+        android:textSize="@dimen/text_small_x" />
+
+    <CheckBox
+        android:id="@+id/symbols_cb"
+        android:layout_width="@dimen/width_medium"
+        android:layout_height="@dimen/height_small_x"
+        android:layout_alignTop="@id/digit_cb"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_toEndOf="@id/digit_cb"
+        android:checked="true"
+        android:text="@string/symbols_char"
+        android:textColor="@color/check_box_text"
+        android:textSize="@dimen/text_small" />
+
+    <TextView
+        android:id="@+id/exclude_char_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upper_letters_cb"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/margin_small_x"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:fontFamily="@font/lobster_regular"
+        android:text="@string/exclude_text"
+        android:textColor="@color/exclude_char_text"
+        android:textSize="@dimen/text_medium" />
+
+    <CheckBox
+        android:id="@+id/similar_chars_cb"
+        android:layout_width="@dimen/width_large"
+        android:layout_height="@dimen/height_small_x"
+        android:layout_below="@id/exclude_char_text"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_small_x"
+        android:checked="false"
+        android:text="@string/similar_chars"
+        android:textColor="@color/check_box_text"
+        android:textSize="@dimen/text_small" />
+</RelativeLayout>

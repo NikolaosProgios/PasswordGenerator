@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="letters">20sp</dimen>
+
+    <!-- Margin -->
+    <dimen name="margin_tine">2dp</dimen>
+    <dimen name="margin_tine_x">5dp</dimen>
+    <dimen name="margin_small">6dp</dimen>
+    <dimen name="margin_small_x">10dp</dimen>
+    <dimen name="margin_medium">15dp</dimen>
+    <dimen name="margin_large">17dp</dimen>
+    <dimen name="margin_large_x">20dp</dimen>
+    <dimen name="margin_big">22dp</dimen>
+    <dimen name="margin_huge">30dp</dimen>
+
+    <!-- Height -->
+    <dimen name="height_tine">2dp</dimen>
+    <dimen name="height_small">30dp</dimen>
+    <dimen name="height_small_x">35dp</dimen>
+    <dimen name="height_medium">45dp</dimen>
+    <dimen name="height_huge">280dp</dimen>
+    <dimen name="height_huge_x">350dp</dimen>
+
+    <!-- Weight -->
+    <dimen name="width_small">83dp</dimen>
+    <dimen name="width_medium">100dp</dimen>
+    <dimen name="width_large">122dp</dimen>
+    <dimen name="width_huge">300dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="text_tine">14sp</dimen>
+    <dimen name="text_small">18sp</dimen>
+    <dimen name="text_small_x">20sp</dimen>
+    <dimen name="text_medium">23sp</dimen>
+    <dimen name="text_large">29sp</dimen>
+    <dimen name="text_large_x">35sp</dimen>
+    <dimen name="text_huge">40sp</dimen>
+
+</resources>
