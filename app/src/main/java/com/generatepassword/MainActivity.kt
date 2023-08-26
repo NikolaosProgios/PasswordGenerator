@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
                 position = progress
                 binding.seekbarPosition.text = position.toString()
             }
-
             override fun onStartTrackingTouch(seekBar: SeekBar) {}
             override fun onStopTrackingTouch(seekBar: SeekBar) {}
         })
@@ -33,8 +32,7 @@ class MainActivity : AppCompatActivity() {
             if (checkCheckBoxes()) {
                 startSecondActivity()
             } else {
-                Toast.makeText(this, getString(R.string.select_check_box), Toast.LENGTH_SHORT)
-                    .show()
+                Toast.makeText(this, getString(R.string.select_check_box), Toast.LENGTH_SHORT).show()
             }
         }
     }

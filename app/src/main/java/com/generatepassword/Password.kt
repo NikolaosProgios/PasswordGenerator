@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import com.generatepassword.databinding.ActivityPasswordBinding
 import java.security.SecureRandom
 import java.util.regex.Matcher
@@ -54,9 +55,7 @@ class Password : AppCompatActivity() {
         while (!checkIsValidate(password)) {
             password = generate()
         }
-        binding.passwordResult.text = password
-        binding.animation.playAnimation()
-        calculateStrength(password)
+        refreshUI(password)
     }
 
     private fun generate(): String {
@@ -121,6 +120,13 @@ class Password : AppCompatActivity() {
         return hasSymbols.find()
     }
 
+    private fun refreshUI(password: String) {
+        binding.passwordResult.text = password
+        binding.animation.playAnimation()
+        calculateStrength(password)
+        refreshCheckText()
+    }
+
     private fun calculateStrength(password: String) {
         if (password.length in 0..5) {
             displayPasswordStrengthen(R.color.weak, "WEAK")
@@ -148,6 +154,27 @@ class Password : AppCompatActivity() {
         )
         clipboard.setPrimaryClip(clipData)
         Toast.makeText(this, "Text copied", Toast.LENGTH_SHORT).show()
+    }
+
+    private fun refreshCheckText() {
+        with(binding) {
+            if (!isUpperChecked) {
+                upperCaseImg.visibility = View.GONE
+                upperCaseTxt.visibility = View.GONE
+            }
+            if (!isLowerChecked){
+                lowerCaseImg.visibility = View.GONE
+                lowerCaseTxt.visibility = View.GONE
+            }
+            if (!isDigitChecked) {
+                digitImg.visibility = View.GONE
+                digitTxt.visibility = View.GONE
+            }
+            if (!isSymbolsChecked) {
+                symbolsImg.visibility = View.GONE
+                symbolsTv.visibility = View.GONE
+            }
+        }
     }
 
     private fun showExcludeSimilarCharsTv(){
